@@ -5,6 +5,13 @@ const divide = require('./functions');
 const multiply = require('./functions');
 const power = require('./functions');
 const root = require('./functions');
+const vowel = require('./functions');
+const upper = require('./functions');
+const reverse = require('./functions');
+const validator = require('./functions');
+const numbers = require('./functions');
+
+
 
 test('If number is divisible by 3 should return Fizz', ()=>{
     expect(fizzBuzz(3).toBe('Fizz'))

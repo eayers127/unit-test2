@@ -54,6 +54,21 @@ function validator(obj, key) {
   myObj = {color: 'blue', size: 'large'};
 module.exports = validator;
 
+function vowel(str){
+    return str.replace(/[aeiou]/gi, "");
+}
+module.exports = vowel;
+
+function upper(str){
+    return str.toUpperCase();
+}
+module.exports = upper;
+
+function reverse(str){
+    return str.split("").reverse().join("");
+}
+module.exports = reverse;
+
 function numbers(arrayNumber){
     let total = 0;
     for (let i = 0; i < arrayNumber.length; i++) {
