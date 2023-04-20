@@ -63,3 +63,14 @@ test('Checks that a string loses all vowels', ()=>{
     expect(vowel('hello').toBe('hll'));
     expect(vowel('jt').toBe('jt'));
 });
+
+test('Checks that a the string is a key of the object entered', ()=>{
+    expect(validator({color: 'blue'}, 'blue').toBe("invalid"));
+    expect(validator({color: 'blue'}, 'color').toBe("valid"));
+    expect(validator({color:'blue'}, 2).toBe('error'));
+})
+
+test('Checks that an array of 1, 2, 3, 4 outputs 10', ()=>{
+    expect(numbers([1,2,3,4]).toBe(10));
+    expect(numbers('1').toBe('error'));
+})
