@@ -11,3 +11,38 @@ function fizzBuzz(n) {
     }
   }
   module.exports = fizzBuzz;
+
+function addition(a,b){
+    return a + b;
+}
+module.exports = addition;
+
+function subtract(c,d){
+    return c - d;
+}
+module.exports = subtract;
+
+function multiply(e,f){
+    return e * f;
+}
+module.exports = multiply;
+
+function divide(g,h){
+    return g/h;
+}
+module.exports = divide;
+
+function power(x,n){
+    let result = 1;
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+  return result;
+}
+module.exports = power;
+
+function root(h){
+    let result = Math.sqrt(h);
+    return Math.round(result);
+}
+module.exports = root;
