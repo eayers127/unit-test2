@@ -53,3 +53,13 @@ test('checks the square root of 63 and rounds it to the nearest whole number',()
 test('Checks that string hello is now olleh', ()=>{
     expect(reverse('hello').toBe('olleh'))
 });
+
+test('Checks that string gets uppercased', ()=>{
+    expect(upper('hello').toBe('Hello'));
+    expect(upper('HELLO').toBe('HELLO'))
+});
+
+test('Checks that a string loses all vowels', ()=>{
+    expect(vowel('hello').toBe('hll'));
+    expect(vowel('jt').toBe('jt'));
+});
