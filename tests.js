@@ -1,4 +1,10 @@
 const fizzBuzz = require('./functions');
+const addition = require('./functions');
+const subtract = require('./functions');
+const divide = require('./functions');
+const multiply = require('./functions');
+const power = require('./functions');
+const root = require('./functions');
 
 test('If number is divisible by 3 should return Fizz', ()=>{
     expect(fizzBuzz(3).toBe('Fizz'))
@@ -26,11 +32,11 @@ test('subtract two numbers',()=>{
 });
 
 test('multiply two numbers together',()=>{
-    expect(addition(10,2).toBe(20))
+    expect(multiply(10,2).toBe(20))
 });
 
 test('divide one number by another',()=>{
-    expect(addition(10,2).toBe(5))
+    expect(divide(10,2).toBe(5))
 });
 
 test('checks x to the nth power',()=>{
@@ -42,4 +48,8 @@ test('checks the square root of 49',()=>{
 });
 test('checks the square root of 63 and rounds it to the nearest whole number',()=>{
     expect(root(63).toBe(8))
+});
+
+test('Checks that string hello is now olleh', ()=>{
+    expect(reverse('hello').toBe('olleh'))
 });
