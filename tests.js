@@ -1,3 +1,5 @@
+const fizzBuzz = require('./functions');
+
 test('If number is divisible by 3 should return Fizz', ()=>{
     expect(fizzBuzz(3).toBe('Fizz'))
     expect(fizzBuzz(6).toBe('Fizz'))
