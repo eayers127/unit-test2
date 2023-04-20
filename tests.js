@@ -65,9 +65,9 @@ test('Checks that a string loses all vowels', ()=>{
 });
 
 test('Checks that a the string is a key of the object entered', ()=>{
-    expect(validator({color: 'blue'}, 'blue').toBe("invalid"));
-    expect(validator({color: 'blue'}, 'color').toBe("valid"));
-    expect(validator({color:'blue'}, 2).toBe('error'));
+    expect(validator(myObj, 'blue').toBe(false));
+    expect(validator(myObj, 'color').toBe(true));
+    expect(validator(myObj, 2).toBe(false));
 })
 
 test('Checks that an array of 1, 2, 3, 4 outputs 10', ()=>{

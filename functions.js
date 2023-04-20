@@ -46,3 +46,20 @@ function root(h){
     return Math.round(result);
 }
 module.exports = root;
+
+function validator(obj, key) {
+    return Object.keys(obj).includes(key);
+  }
+
+  myObj = {color: 'blue', size: 'large'};
+module.exports = validator;
+
+function numbers(arrayNumber){
+    let total = 0;
+    for (let i = 0; i < arrayNumber.length; i++) {
+    total += arrayNumber[i];
+    }
+  return total;
+}
+
+module.exports = numbers;
